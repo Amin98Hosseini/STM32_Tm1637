@@ -17,4 +17,5 @@
 * Add Tm1637 library to your project.
 * Configure `TM1637.h` , `TM1637.c` files.
 * Call `TM1637_Init(); ` in infinit main. 
-
+--------------------------------------------------------------------------------
+* This project is provided as open source , and has a program file and a pcb file.
