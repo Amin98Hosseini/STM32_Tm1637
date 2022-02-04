@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+"tm1637-segment\startup_stm32f030x6.o"
+"tm1637-segment\main.o"
+"tm1637-segment\gpio.o"
+"tm1637-segment\stm32f0xx_it.o"
+"tm1637-segment\stm32f0xx_hal_msp.o"
+"tm1637-segment\stm32f0xx_hal_tim.o"
+"tm1637-segment\stm32f0xx_hal_tim_ex.o"
+"tm1637-segment\stm32f0xx_hal_rcc.o"
+"tm1637-segment\stm32f0xx_hal_rcc_ex.o"
+"tm1637-segment\stm32f0xx_hal.o"
+"tm1637-segment\stm32f0xx_hal_i2c.o"
+"tm1637-segment\stm32f0xx_hal_i2c_ex.o"
+"tm1637-segment\stm32f0xx_hal_gpio.o"
+"tm1637-segment\stm32f0xx_hal_dma.o"
+"tm1637-segment\stm32f0xx_hal_cortex.o"
+"tm1637-segment\stm32f0xx_hal_pwr.o"
+"tm1637-segment\stm32f0xx_hal_pwr_ex.o"
+"tm1637-segment\stm32f0xx_hal_flash.o"
+"tm1637-segment\stm32f0xx_hal_flash_ex.o"
+"tm1637-segment\stm32f0xx_hal_exti.o"
+"tm1637-segment\system_stm32f0xx.o"
+"tm1637-segment\tm1637.o"
+--strict --scatter "tm1637-segment\tm1637-segment.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tm1637-segment.map" -o tm1637-segment\tm1637-segment.axf
